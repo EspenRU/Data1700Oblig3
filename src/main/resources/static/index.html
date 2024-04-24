@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <title>Title</title>
+
+    <script src="index.js"></script>
+
+</head>
+<body>
+
+<div style="margin:50px 50px; border: solid; padding: 100px;">
+    <header class="Header " data-raectid="4">
+        <div class="container" data-raectid="5"></div>
+    </header>
+    <h2>Bestilling av kinobiletter</h2>
+
+
+
+    <label for="velgFilmHer">Velg film:</label>
+    <select id="velgFilmHer">
+        <option value="">velg film</option>
+        <option value="Spider man">ٍSpider man: no way home</option>
+        <option value="Lion">Lion</option>
+        <option value="007">007</option>
+    </select>
+    <label id = "feil0" style="color: red;"></label>
+
+    <br>
+    <br>
+
+    <label for="antall">Antall</label>
+    <td><input type="number" style="width: 40px" min="1" id="antall"/>
+        <label id="feil1" style="color: red;"></label></td>
+
+    <br>
+    <br>
+    <table>
+        <tr>
+            <td><label for="navn">Fornavn</label></td>
+            <td><input type="text"  placeholder="skriv inn fornavnet ditt" id="navn"/></td>
+            <td><label id="feil2" style="color: red;"></label></td>
+        </tr>
+
+        <tr>
+            <td><label for="navn1">Etternavn</label> </td>
+            <td><input type="text" placeholder="skriv inn etternavnet ditt" id="navn1"/></td>
+            <td><label id="feil3" style="color: red;"></label></td>
+        </tr>
+
+        <tr>
+            <td><label for="email">Epost</label></td>
+            <td><input type="email" placeholder="skriv inn epost din" id="email"/></td>
+            <td><label id="feil4" style="color: red;"></label></td>
+        </tr>
+
+        <tr>
+            <td><label for="tlnr">Telefonnr</label></td>
+            <td><input type="text"  placeholder="skriv inn telefonnr ditt" id="tlnr" /></td>
+            <td><label id="feil5" style="color: red;"></label></td>
+        </tr>
+
+    </table>
+
+    <br>
+    <br>
+
+    <button  class= "btn btn-success" onclick="kjop()">Kjøp billett</button>
+
+
+    <br>
+
+    <h2>Alle billetter</h2>
+    <div id="drop"></div>
+    <button class="btn btn-danger" onclick="nullstil()">Slett alle billettene</button>
+
+</div>
+
+</body>
+</html>
